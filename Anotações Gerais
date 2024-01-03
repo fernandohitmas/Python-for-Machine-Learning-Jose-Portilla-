@@ -1,0 +1,22 @@
+Avaliação de modelo (Supervisionado e Binário)
+
+ - Separação dos dados em: treino e teste
+ - O conjunto de dados de treino é aquele utilizado para treinar o modelo de aprendizado de máquina e o conjunto de teste é utilizado para testar a qualidade do modelo.
+
+Para avaliar um modelo deste tipo é comum utilizar a matriz de confusão
+
+ - Acurácia: porcentagem de acertos dentro do número total de testes. É útil quando se trata de um conjunto de dados BALANCEADO.
+
+ - No caso de conjuntos DESbalanceados: Recall e Precisão
+ - RECALL: habilidade de um modelo de encontrar todos os casos relevantes dentro de um conjunto de dados. Seu cálculo é feito pela divisão de verdadeiros positivos pela soma de verdadeiros positivos e falsos negativos
+ - PRECISÃO: habilidade de um modelo em identificar somente os pontos relevantes. É definido como: o número de verdadeiros positivos dividido pela soma de verdadeiros positivos e falsos positivos.
+ - F1-SCORE: no caso de querer o balanço entre ambas as métricas. É calculada pela médias harmônica entre recall e precisão. Pune diferenças muito grandes entre ambas.
+
+Pensando em aplicações reais (saúde), os modelos utilizados normalmente tentam avaliar de forma rápida se a pessoa está doente e se ela necessita de uma avaliação mais sensível e que comumente é mais invasiva. Faz sentido pensar que no caso de doenças é mais interessante focar em valores maiores de falsos positivos do que em falsos negativos, para que se tenha a maior cobertura possível das pessoas doentes.
+
+
+Avaliação de modelos - Regressão
+
+ - ERRO ABSOLUTO MÉDIO: média dos erros absolutos para cada ponto do conjunto de dados. Não pune pontos extremos.
+ - ERRO QUADRÁTICO MÉDIO: média dos erros ao quadrado. 
+ - RAIZ DO ERRO QUADRÁTICO MÉDIO: raiz quadrada de MSE. Mantém a mesma unidade do que está sendo avaliado
