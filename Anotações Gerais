@@ -20,3 +20,12 @@ Avaliação de modelos - Regressão
  - ERRO ABSOLUTO MÉDIO: média dos erros absolutos para cada ponto do conjunto de dados. Não pune pontos extremos.
  - ERRO QUADRÁTICO MÉDIO: média dos erros ao quadrado. 
  - RAIZ DO ERRO QUADRÁTICO MÉDIO: raiz quadrada de MSE. Mantém a mesma unidade do que está sendo avaliado
+
+
+Dilema de Viés e verdadeiros
+ - Overfitting e underfittin
+ - ao se aumentar a complexidade de um modelo, ele naturalmente se ajustará aos dados de treinamento, porém quando o utilizamos os dados de teste ele tem uma performance muito ruim e com altos índices de erros. Logo, é dever do cientista de dados avaliar um modelo que nao esteja nos extremos e que consiga ponderar a complexidade e a métrica de avaliação do modelo.
+
+Regressão Logística
+ - é um método de CLASSIFICAÇÃO. Classificação de doenças, classificação de e-mail
+ - A convenção é utilizar 0 e 1 
