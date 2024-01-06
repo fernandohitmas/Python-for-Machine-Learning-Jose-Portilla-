@@ -29,3 +29,15 @@ Dilema de Viés e verdadeiros
 Regressão Logística
  - é um método de CLASSIFICAÇÃO. Classificação de doenças, classificação de e-mail
  - A convenção é utilizar 0 e 1 
+
+K Vizinhos mais Próximos
+ - É um modelo de CLASSIFICAÇÃO
+ - Utiliza os pontos mais próximos daquele que se deseja classificar para tomar a decisão.
+ - O K é o parametro que indica quantos pontos serão utilizados nos cálculos do método
+ - É muito simples
+ - Funciona com qualquer quantidade de classes
+ - Fácil de adicionar dados
+ - Possui poucos parâmetros
+ - Custo de predicao é muito alto
+ - Não é muito bom para problemas de dimensao alta
+ - Nao funciona muito bem com variáveis categóricas
