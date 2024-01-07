@@ -41,3 +41,11 @@ K Vizinhos mais Próximos
  - Custo de predicao é muito alto
  - Não é muito bom para problemas de dimensao alta
  - Nao funciona muito bem com variáveis categóricas
+
+Árvores de decisão e florestas aleatórias
+ - método que envoler a estratificação ou a segmentação
+ - São simples e de interpretação fácil
+ - Não são compepetitivas quando contra os melhores modelos supervisionados
+ - Tem aplicação tanto em regressão quanto em classificação
+ - Critério de separação dos nós: Índice de Gini ou Entropia. Ambos são úteis na hora de indicar a pureza de um nó (se possui muitas observações de uma mesma classe)
+ - Possuem variancia muito grande
