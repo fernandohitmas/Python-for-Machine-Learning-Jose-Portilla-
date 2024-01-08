@@ -49,3 +49,10 @@ K Vizinhos mais Próximos
  - Tem aplicação tanto em regressão quanto em classificação
  - Critério de separação dos nós: Índice de Gini ou Entropia. Ambos são úteis na hora de indicar a pureza de um nó (se possui muitas observações de uma mesma classe)
  - Possuem variancia muito grande
+
+Support Vector Machines (capitulo 9 de Intro to Statistical Learning)
+ - SVMs - Supervisionado, reconhecimento de padrões
+ - Tenta dividir o espaço das observações para categorizar novas observações. Utiliza um hiperplano que maximiza a margem que se separa dos dados
+ - Os pontos que definem as margens são denominados como pontos de suporte, daí o nome de vetores de suporte
+ - Truque de Kernel: adicionar uma dimensão.
+ 
