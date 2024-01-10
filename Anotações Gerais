@@ -71,3 +71,6 @@ K Means Clustering - CLUSTERING
   - REPRESENTAÇÃO DE MENOR DIMENSÃO, MAS QUE CONTÉM O MÁXIMO DE VARIAÇÃO POSSÍVEL DOS DADOS
   - A primeira componente do PCA também poder ser interpretado como a dimensão que os dados estão mais próximos
 
+Sistemas de Recomendação
+ - Content Base - de acordo com as semelhanças entre os itens
+ - Collaborative Filtering - de acordo com o comportamento do usuario
