@@ -74,3 +74,11 @@ K Means Clustering - CLUSTERING
 Sistemas de Recomendação
  - Content Base - de acordo com as semelhanças entre os itens
  - Collaborative Filtering - de acordo com o comportamento do usuario
+
+Processamento de Linguagem Natural
+ - Processamento de aquivos de textos com o intuito de se mapear as su as similaridades, podendo, dessa forma, fazer a sua categorização.
+ - Corpus: conjunto de documentos a serem analisados
+ - Bag of Words: documento contendo palavras
+ - Term Frequency: a importância que os termo tem dentro do documento - Número de ocorrências do termo T no documento D
+ - Inverse Document Frequency: Importancia que o termo tem dentro do Corpus - IDF = log(D/T), onde D é o número total de documentos e T é o número de documentos que tem o termo
+ - TF-IDF = TF_xy*log(N/df_x), N é o número total de documentoes, tf_xy é a frequência de x em y e df_x é o número de documentos que contém x
