@@ -82,3 +82,28 @@ Processamento de Linguagem Natural
  - Term Frequency: a importância que os termo tem dentro do documento - Número de ocorrências do termo T no documento D
  - Inverse Document Frequency: Importancia que o termo tem dentro do Corpus - IDF = log(D/T), onde D é o número total de documentos e T é o número de documentos que tem o termo
  - TF-IDF = TF_xy*log(N/df_x), N é o número total de documentoes, tf_xy é a frequência de x em y e df_x é o número de documentos que contém x
+
+Redes Neurais e Deep Learning
+  - Tópicos: Modelo de Perceptron, funções de ativção, funções de custo, feed foward rede neural, back progation
+  - Redes neurais tentam imitar o funcionamento de uma rede neural biológica (cérebro)
+  - Modelo Perceptron: como funcionam neurônios. Dendritos > Núcleos > Axônios. inputs > f(x) > y >output
+  - Idealmente, o modelo deveria ter algum modo de aprender. Uma forma de fazer isso é utilizar um vetor de pesos que multiplicam o vetor de entradas de f(X). Assim, é possível modificar esses pesos para chegar no resultado almejado.
+  - Além do peso também utiliza-se um "viés" na função. w1*x1 + b, por exemplo.
+  - perceptron: y_hat = sum xi*wi + bi
+  - O modelo de perceptron único pode ser expandido em um modelo de multicamadas de perceptrons.
+  - camada1(p1,p2,p3) > camada2(q1,q2) > camada3(c1,c2,c3)
+  - quando todos os perceptrons estão ligados com a próxima camada é chamada de CAMADA CHEIA/TOTALMENTE LIGADA.
+  - As informações seguem apenas uma direção, feed foward.
+  - primeira camada é chamada de input layer e a última é chamada de output layer e qualquer um entre elas é chamada de hidden layers
+  - Hidden Layers tem a intepretabilidade bastante comprometida devido a distância que estão dos inputs e dos outputs
+  - Uma rede neural se torna um rede profunda quando contém 2 ou mais hidden layers
+  - Redes Neurais podem aproximar qualquer função (universal approximation theorem)
+  - importante considerar limites dentro dos quais a função f(x) vai atuar e como as funções de ativação funcionam
+  - a curva logística é bastante utilizada como função de ativação 
+  - outras funções: tangente hiperbólica, Rectified Linear Unit(ReLu, max(0,z))
+  - organizar as saídas em Múltiplas classes > one hot encoding 
+  - sofmax function
+  - funções exclusivas
+  - Minimizar a função de custo utilizando o método de gradiente descendente ADAPTATIVO (adam)
+  - para problemas de classficação, normalmente é utilizado cross entropy loss function. Assume que tem uma distribuição de probabilidade para cada categoria
+  - BACKPROPAGATION 
