@@ -107,3 +107,6 @@ Redes Neurais e Deep Learning
   - Minimizar a função de custo utilizando o método de gradiente descendente ADAPTATIVO (adam)
   - para problemas de classficação, normalmente é utilizado cross entropy loss function. Assume que tem uma distribuição de probabilidade para cada categoria
   - BACKPROPAGATION 
+
+Tensorflow vs Keras:
+  -  Keras é uma biblioteca de python que permite utilizar outras bibliotecas de aprendizado profundo, como o tensorflow. 
