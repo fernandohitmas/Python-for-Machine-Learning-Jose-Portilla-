@@ -98,7 +98,7 @@ Redes Neurais e Deep Learning
   - Hidden Layers tem a intepretabilidade bastante comprometida devido a distância que estão dos inputs e dos outputs
   - Uma rede neural se torna um rede profunda quando contém 2 ou mais hidden layers
   - Redes Neurais podem aproximar qualquer função (universal approximation theorem)
-  - importante considerar limites dentro dos quais a função f(x) vai atuar e como as funções de ativação funcionam
+  - importante considerar limites dentro dos quais a função f(x) vai atuar e como as funções de ativação funcionam 
   - a curva logística é bastante utilizada como função de ativação 
   - outras funções: tangente hiperbólica, Rectified Linear Unit(ReLu, max(0,z))
   - organizar as saídas em Múltiplas classes > one hot encoding 
@@ -110,3 +110,4 @@ Redes Neurais e Deep Learning
 
 Tensorflow vs Keras:
   -  Keras é uma biblioteca de python que permite utilizar outras bibliotecas de aprendizado profundo, como o tensorflow. 
+  - Early Stopping: o keras para automaticamente o treinamento baseado numa condição da função de perda durante o período de validação dos dados, passado no método .fit do modelo
