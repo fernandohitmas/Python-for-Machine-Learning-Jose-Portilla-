@@ -111,3 +111,40 @@ Redes Neurais e Deep Learning
 Tensorflow vs Keras:
   -  Keras é uma biblioteca de python que permite utilizar outras bibliotecas de aprendizado profundo, como o tensorflow. 
   - Early Stopping: o keras para automaticamente o treinamento baseado numa condição da função de perda durante o período de validação dos dados, passado no método .fit do modelo
+
+Big Data:
+  - Local vs Distribuido: local usa todos os cores da máquina, mas distribuido utiliza menos cores de mais máquinas conectadas por alguma rede.
+  - Distribuido: vantagem de ser escalável, possuem "Fault Tolerance"
+  - Arquitetura utilizando Hadoop: é uma forma de distribuir grandes arquivos através de múltiplas máquinas (Hadoop Distributed File System / HDFS). Permite que o usuário trabalhe com grandes conjuntos de dados, permite blocos duplicados de dados, utiliza MapReduce 
+  - HDFS: um nó principal que controla outros. A multiplicidade de nós permite que dados sejam duplicados, permite paralelização e também prevenção de problemas. Baixo custo
+  - MapReduce é uma forma de computação distribuida para formatos de dados como HDFS e consiste num Job Tracker e mútiplos Task Trackers
+
+Spark:
+  - Projeto do Apache
+  - Aceita dados guardados de diversas formas, tais como Cassandra, AWS S3, HDFS e mais
+  - Spark pode ser até 100x mais rápido que MapReduce
+  - MapReduce usa o disco e Spark usa RAM
+  - A ideia principal do Spark vem de RDD, ou, Resilient Distributed Dataset. RDD tem 4 features principais: Coleção Distribudída de Dados, tolerância a problemas, operações paralelizadas/particionadas e a habilidade de usar diversas fontes de dados
+  - RDDs são imutáveis, lazily evaluated e cacheable
+  - Existem 2 tipos de operações RDD, transformações e Ações
+  - Ações Básicas: First (Retorna o primeiro elemento do RDD), Collect (retorna todos os elementos do RDD como um array no programa principal), Count (retorna o número de eelementos do RDD), Take (retorna um array com os primeiros n elementos do RDD)
+  - Transformações Básicas: Filter (aplica uma função em cada elemento e retorna aqueles que forem verdadeiros), Map (transforma cada elemento e preserva o número de elementos), FlatMap (transforma cada elemento em um 0xN elemento e provavelmente muda o número de elementos)
+  - Frequentemente RDDs armazerão os dados na forma de tuplas (chave, valor)
+  - Reduce: uma ação que agregará os elementos da RDD utilizando uma função que retorna apenas um elemento
+  - ReduceByKey:ma ação que agregará os elementos da RDD utilizando uma função que retorna apenas um par de elementos
+  - Ambos reduce são similar a group by
+
+AWS - EC2:
+  - Amazon Elastic Compute Cloud (EC2): computação em nuvem que sob demanda. "Computador virtual que é acessado via internet"
+  - 1. Criar uma instância EC2 na AWS
+  - 2. Usar uma chave SSH para conectar ao EC2 pela internet
+  - Criando uma instância:
+  - 1. Login nos serviços AWS
+  - 2. EC2
+  - 3. Executar uma instância
+  - 4. Escolher uma AMI - Amazon Machine Image ou OS da máquina virtual. No caso foi escolhido um ubuntu de nível gratuito
+  - 5. Escolher tipo de instância: t2.micro (1vCPU e 1 Gib de memória)
+  - 6. Par de Chaves: key: myspark2
+  - 7. Configurar Rede: default
+  - 8. Configurar armazenamento default
+  - OBSERVAÇÃO: estado da instância > encerrar instância
