@@ -331,3 +331,15 @@ from pyspark import SparkContext
 sc = SparkContext()
 
 I hope this will work smoothly for you !! all the best!
+
+Revisão de Lambda Expressions:
+  -
+
+Introdução ao Spark e Python
+
+  - %%writefile example.txt
+  first line
+  second line
+  third line
+  fourth line
+  - sc = SparkContext() cria um objeto RDD em que é possível realizar Ações e Transformações, tais como count e first
