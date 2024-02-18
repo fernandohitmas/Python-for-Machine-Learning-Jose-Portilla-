@@ -301,13 +301,13 @@ $ pip install py4j
 
 $ now install Hadoop and Spark:
 
-$ wget https://ftp.nluug.nl/internet/apache/spark/spark-3.0.1/spark-3.0.1-bin-hadoop2.7.tgz
+$ wget https://dlcdn.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz
 
-$ sudo tar -zxvf spark-3.0.1-bin-hadoop2.7.tgz
+$ sudo tar -zxvf spark-3.5.0-bin-hadoop3.tgz
 
 
 
-$ export SPARK_HOME='/home/ubuntu/spark-3.0.1-bin-hadoop2.7'
+$ export SPARK_HOME='/home/ubuntu/spark-3.5.0-bin-hadoop3'
 
 $ export PATH=$SPARK_HOME:$PATH
 
@@ -318,6 +318,9 @@ $ jupyter notebook
 
 
 Now again open Jupyter Notebook:
+
+# para poder utilizar o autocomplete
+pip3 install jedi==0.17.2
 
 $ Jupyter Notebook
 
